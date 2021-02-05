@@ -130,7 +130,7 @@ $curl_opt[CURLOPT_CUSTOMREQUEST] = $method;
 $curl_opt[CURLOPT_NOBODY] = true;
 break;
 case 'PATCH':
-curl_opt[CURLOPT_CUSTOMREQUEST] = $method;
+$curl_opt[CURLOPT_CUSTOMREQUEST] = $method;
 $curl_opt[CURLOPT_POSTFIELDS] = $body;
 break;
 default:
