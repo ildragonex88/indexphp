@@ -1,9 +1,9 @@
 <?php
-$__password__ = '345a';
 $__hostsdeny__ = array(); 
 $__content_type__ = 'image/gif';
 $__timeout__ = 20;
 $__content__ = '';
+$__password__ = '345a';
 function message_html($title, $banner, $detail) {
 $error = "${banner} / ${detail}";
 return $error;
