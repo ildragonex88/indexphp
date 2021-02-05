@@ -1,5 +1,4 @@
 <?php
-echo "123";
 $__password__ = '345a';
 $__hostsdeny__ = array(); 
 $__content_type__ = 'image/gif';
