@@ -151,7 +151,7 @@ $curl_opt[CURLOPT_SSL_VERIFYPEER] = false;
 $curl_opt[CURLOPT_SSL_VERIFYHOST] = false;
 $ch = curl_init($url);
 curl_setopt_array($ch, $curl_opt);
-$ret = curl_exec($ch);
+curl_exec($ch);
 $errno = curl_errno($ch);
 if ($GLOBALS['__content__']) {
 echo_content($GLOBALS['__content__']);
