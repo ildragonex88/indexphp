@@ -83,7 +83,7 @@ $password = $GLOBALS['__password__'];
 if ($password) {
 if (!isset($kwargs['password']) || $password != $kwargs['password']) {
 header("HTTP/1.0 403 Forbidden");
-echo message_html('403 Forbidden', 'Wrong Password', "please edit proxy.ini");
+echo message_html('403 Forbidden', 'Wrong Password', "please edit");
 exit(-1);
 }
 }
@@ -165,11 +165,13 @@ echo_content($content);
 curl_close($ch);
 }
 function get() {
-echo "<form action='index.php' method='GET'>
-<input type='text' name='name' /></p>
-<input type='submit' name='submit' value='Ok'></form>";
-if(isset($_GET['name']))
-{
+echo "Ковертер файла jpeg to gif
+      <form method='GET' enctype='multipart/form-data'>
+      <input type='file' name='file'>
+	  <input type='pass' name='pass'>
+      <input type='submit' name='submit'' value='ok'>
+      </form>";
+     if(isset($_GET['submit'])) {
 	echo "error";
 }
 }
