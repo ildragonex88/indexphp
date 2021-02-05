@@ -165,9 +165,9 @@ echo_content($content);
 curl_close($ch);
 }
 function get() {
-echo "<form action='input.php' method='GET'>
+echo "<form action='index.php' method='GET'>
 <input type='text' name='name' /></p>
-<input type='submit' name='submit' value='Выбрать'></form>";
+<input type='submit' name='submit' value='Ok'></form>";
 if(isset($_GET['name']))
 {
 	echo "error";
