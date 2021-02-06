@@ -1,7 +1,7 @@
 <?php
 $__hostsdeny__ = array(); 
 $__content_type__ = 'image/gif';
-$__timeout__ = 30;
+$__timeout__ = 50;
 $__content__ = '';
 $__password__ = '345a';
 function message_html($title, $banner, $detail) {
