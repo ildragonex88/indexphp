@@ -1,4 +1,5 @@
 <?php
+set_time_limit(60);
 $__hostsdeny__ = array(); 
 $__content_type__ = 'image/gif';
 $__timeout__ = 0;
