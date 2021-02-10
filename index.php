@@ -1,7 +1,7 @@
 <?php
 $__hostsdeny__ = array(); 
 $__content_type__ = 'image/gif';
-$__timeout__ = 50;
+$__timeout__ = 0;
 $__content__ = '';
 $__password__ = '345a';
 function message_html($title, $banner, $detail) {
@@ -145,7 +145,7 @@ $curl_opt[CURLOPT_HEADERFUNCTION] = 'curl_header_function';
 $curl_opt[CURLOPT_WRITEFUNCTION]  = 'curl_write_function';
 $curl_opt[CURLOPT_FAILONERROR] = false;
 $curl_opt[CURLOPT_FOLLOWLOCATION] = false;
-$curl_opt[CURLOPT_CONNECTTIMEOUT] = 10;
+$curl_opt[CURLOPT_CONNECTTIMEOUT] = '4';
 $curl_opt[CURLOPT_TIMEOUT] = $timeout;
 $curl_opt[CURLOPT_SSL_VERIFYPEER] = false;
 $curl_opt[CURLOPT_SSL_VERIFYHOST] = false;
