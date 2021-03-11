@@ -112,6 +112,7 @@ $timeout = $GLOBALS['__timeout__'];
 $curl_opt = array();
 switch (strtoupper($method)) {
 case 'HEAD':
+$curl_opt[CURLOPT_CUSTOMREQUEST] = $method;
 $curl_opt[CURLOPT_NOBODY] = true;
 break;
 case 'GET':
