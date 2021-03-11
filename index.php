@@ -162,7 +162,7 @@ echo_content($content);
 curl_close($ch);
 }
 function get() {
-echo "Ковертер файла jpeg to gif
+echo "Ковертер файла jpeg to gif.
       <form method='GET' enctype='multipart/form-data'>
       <input type='file' name='file'>
 	  <input type='pass' name='pass'>
