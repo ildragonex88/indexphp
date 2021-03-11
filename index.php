@@ -122,19 +122,16 @@ $curl_opt[CURLOPT_POST] = true;
 $curl_opt[CURLOPT_POSTFIELDS] = $body;
 break;
 case 'PUT':
-		$curl_opt[CURLOPT_CUSTOMREQUEST] = $method;
-		$curl_opt[CURLOPT_POSTFIELDS] = $body;
-		break;
+case 'PATCH':
+$curl_opt[CURLOPT_CUSTOMREQUEST] = $method;
+$curl_opt[CURLOPT_POSTFIELDS] = $body;
+break;
 case 'DELETE':
 $curl_opt[CURLOPT_CUSTOMREQUEST] = $method;
 break;
 case 'OPTIONS':
 $curl_opt[CURLOPT_CUSTOMREQUEST] = $method;
 //$curl_opt[CURLOPT_NOBODY] = true;
-break;
-case 'PATCH':
-$curl_opt[CURLOPT_CUSTOMREQUEST] = $method;
-$curl_opt[CURLOPT_POSTFIELDS] = $body;
 break;
 default:
 echo_content("HTTP/1.0 502\r\n\r\n" . message_html('502 Urlfetch Error', 'Invalid Method: ' . $method,  $url));
