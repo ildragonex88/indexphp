@@ -141,7 +141,6 @@ $curl_opt[CURLOPT_BINARYTRANSFER] = true;
 $curl_opt[CURLOPT_HEADER] = false;
 $curl_opt[CURLOPT_HEADERFUNCTION] = 'curl_header_function';
 $curl_opt[CURLOPT_WRITEFUNCTION]  = 'curl_write_function';
-$curl_opt[CURLOPT_FAILONERROR] = false;
 $curl_opt[CURLOPT_FOLLOWLOCATION] = false;
 $curl_opt[CURLOPT_CONNECTTIMEOUT] = 10;
 $curl_opt[CURLOPT_TIMEOUT] = $timeout;
