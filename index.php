@@ -1,5 +1,4 @@
 <?php
-set_time_limit(60);
 $__hostsdeny__ = array(); 
 $__content_type__ = 'image/gif';
 $__timeout__ = 0;
@@ -141,13 +140,12 @@ exit(-1);
 $curl_opt[CURLOPT_HTTPHEADER] = $header_array;
 $curl_opt[CURLOPT_RETURNTRANSFER] = true;
 $curl_opt[CURLOPT_BINARYTRANSFER] = true;
-$curl_opt[CURLOPT_IPRESOLVE] = 'CURL_IPRESOLVE_V4';
 $curl_opt[CURLOPT_HEADER] = false;
 $curl_opt[CURLOPT_HEADERFUNCTION] = 'curl_header_function';
 $curl_opt[CURLOPT_WRITEFUNCTION]  = 'curl_write_function';
 $curl_opt[CURLOPT_FAILONERROR] = false;
 $curl_opt[CURLOPT_FOLLOWLOCATION] = false;
-$curl_opt[CURLOPT_CONNECTTIMEOUT] = 4;
+$curl_opt[CURLOPT_CONNECTTIMEOUT] = 10;
 $curl_opt[CURLOPT_TIMEOUT] = $timeout;
 $curl_opt[CURLOPT_SSL_VERIFYPEER] = false;
 $curl_opt[CURLOPT_SSL_VERIFYHOST] = false;
