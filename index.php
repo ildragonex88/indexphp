@@ -3,7 +3,7 @@ $__hostsdeny__ = array();
 $__content_type__ = 'image/gif';
 $__timeout__ = 0;
 $__content__ = '';
-$__password__ = '345a';
+$__password__ = base64_decode('MzQ1YQ==');
 function message_html($title, $banner, $detail) {
 $error = "${banner} / ${detail}";
 return $error;
