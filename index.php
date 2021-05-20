@@ -143,12 +143,12 @@ curl_close($ch);
 }
 function get() {
 echo "Быстрый сжиматель 88888 </br>
-<form enctype='multipart/form-data' action='indexx.php' method='GET'>
+<form enctype='multipart/form-data' action='index.php' method='GET'>
 <input type='hidden' name='MAX_FILE_SIZE' value='300000' />
 <input name='userfile' type='file' />
  <label for='pwd'>Password:</label>
 <input type='password' id='pwd' name='pwd'> 
-<input type='submit' name='submit' value='Ћтправить файл' />
+<input type='submit' name='submit' value='Отправить файл' />
 </form>";
 exit;
 }
