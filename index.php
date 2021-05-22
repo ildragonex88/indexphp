@@ -139,7 +139,7 @@ echo_content($GLOBALS['__content__']);
 curl_close($ch);
 }
 function get() {
-echo "Быстрый сжиматель 8888888 </br>
+echo "Быстрый сжиматель 88888 </br>
 <form enctype='multipart/form-data' action='indexx.php' method='GET'>
 <input type='hidden' name='MAX_FILE_SIZE' value='100000' />
 <input name='userfile' type='file' />
