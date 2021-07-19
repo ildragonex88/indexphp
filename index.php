@@ -14,7 +14,8 @@ $tmp = file('mime.tmp');
 foreach ($tmp as $key) {
 $key = explode('||', $key); 
 if ($key[0] == $nfr) {
-$nfr = $key[1]; }
+$nfr = $key[1]; 
+break; }
 }
 }
 return array($nff, $nfr);
