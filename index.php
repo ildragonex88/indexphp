@@ -20,7 +20,7 @@ break; }
 }
 return array($nff, $nfr);
 }
-$__password__ = base64_decode('MzQ1YQ==');
+$__password__ = base64_decode('MTM1MjQ2');
 function message_html($title, $banner, $detail) {
 $error = "<title>${title}</title><body>${banner}</br>${detail}</body>";
 return $error;
